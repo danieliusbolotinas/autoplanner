@@ -154,11 +154,13 @@ return [
         /*
          * Application Service Providers...
          */
-        App\Providers\AppServiceProvider::class,
-        App\Providers\AuthServiceProvider::class,
-        // App\Providers\BroadcastServiceProvider::class,
-        App\Providers\EventServiceProvider::class,
-        App\Providers\RouteServiceProvider::class,
+        AutoPlanner\Providers\AppServiceProvider::class,
+        AutoPlanner\Providers\AuthServiceProvider::class,
+        // AutoPlanner\Providers\BroadcastServiceProvider::class,
+        AutoPlanner\Providers\EventServiceProvider::class,
+        AutoPlanner\Providers\RouteServiceProvider::class,
+        'Maatwebsite\Excel\ExcelServiceProvider',
+        'Collective\Html\HtmlServiceProvider',
 
     ],
 
@@ -208,6 +210,9 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
+        'Excel' => 'Maatwebsite\Excel\Facades\Excel',
+        'Form' => 'Collective\Html\FormFacade',
+        'Html' => 'Collective\Html\HtmlFacade',
 
     ],
 

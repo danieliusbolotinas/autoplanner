@@ -1,0 +1,42 @@
+
+/* .container {
+margin-top: 30px;
+margin-bottom: 30px;
+} */
+
+div.form-group{
+  position: absolute;
+  top: 40%;
+  margin: 0 auto;
+  left: 25%;
+  font-family: 'Poiret One', cursive;
+}
+
+.form-control{
+  text-align: center;
+  color: white;
+  background-color: #5d5f63;
+  padding: 100px;
+  text-decoration: none;
+  font-size: large;
+  margin-right:10px;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #5d5f63;
+    border-color: #0062cc;
+    text-decoration: none;
+}
+
+.insert-file{
+  position: absolute;
+  top: 40%;
+  margin: 0 auto;
+  left: 25%;
+  font-family: 'Poiret One', cursive;
+  font-size: large;
+  border-style: groove;
+  padding: 10px;
+  box-shadow: 5px 10px #888888;
+}
