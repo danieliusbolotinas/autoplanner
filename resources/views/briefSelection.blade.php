@@ -19,7 +19,7 @@
           {!! Form::label('sample_file','Select File to Import:',['class'=>'col-md-3']) !!}
           <div class="col-md-9">
             {!! Form::file('sample_file', array('class' => 'form')) !!}
-          
+
             {!! $errors->first('sample_file', '<p class="alert alert-danger">:message</p>') !!}
           </div>
         </div>
@@ -31,6 +31,9 @@
     {!! Form::close() !!}
   </div>
 </div>
+
+
+
 
 
 @endsection

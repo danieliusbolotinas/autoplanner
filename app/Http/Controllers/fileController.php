@@ -19,6 +19,7 @@ class FileController extends Controller {
                 if(!empty($arr)){
                     \DB::table('brief')->insert($arr);
                     dd('Insert Record successfully.');
+                    return redirect()->route('brief');
                 }
             }
         }
