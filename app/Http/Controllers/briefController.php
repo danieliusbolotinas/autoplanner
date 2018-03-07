@@ -38,16 +38,8 @@ class briefController extends Controller
   */
   public function create()
   {
-    
-    $startTime = strtotime('project_start_date');
-    $endTime = strtotime('project_end_date');
-    $weeks = array();
-    while ($startTime < $endTime) {
-      $weeks[] = date('W', $startTime);
-      $startTime += strtotime('+1 week', 0);
-    }
 
-    return view('createFlowchart');
+    
   }
 
   /**

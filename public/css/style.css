@@ -3,6 +3,16 @@
 margin-top: 30px;
 margin-bottom: 30px;
 } */
+body{
+  font-family: 'Poiret One', cursive;
+}
+
+h1,h2,h3,h4{
+  text-align: center;
+  font-weight: bold;
+}
+
+/*************MEDIA SELECTION***********/
 
 div.form-group{
   position: absolute;
@@ -39,4 +49,23 @@ div.form-group{
   border-style: groove;
   padding: 10px;
   box-shadow: 5px 10px #888888;
+}
+
+/*************CHANNEL PICKER*********/
+
+.row-channels{
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.container-channel{
+  display: inline-block;
+  padding: 15px;
+  border-style: solid;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.col-sm-4{
+  padding: 0;
 }

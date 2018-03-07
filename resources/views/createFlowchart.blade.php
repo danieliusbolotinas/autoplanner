@@ -9,13 +9,13 @@
   </div>
 </div>
 
-@foreach ($briefs->$weeks as $week)
+@foreach ($flowcharts->$weeks as $week)
 
 <div class="col-md-12">
   <div class="row">
     <thead>
       <tr>
-      <th scope="col">w{{$brief->week}}</th>
+      <th scope="col">w{{$brief->weeks}}</th>
     </tr>
   </thead>
   <tbody>
@@ -28,6 +28,6 @@
 
 @endforeach
 
-<a href="{{{route('channelPicker')}}"><button class="btn btn-primary">OK</button></a>
+<a href="{{route('channelPicker')}}"><button class="btn btn-primary">OK</button></a>
 
 @endsection

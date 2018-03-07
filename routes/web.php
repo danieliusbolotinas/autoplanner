@@ -19,6 +19,8 @@ Route::get('/', 'mediaTypeSelectionController@index')->name('mediaSelection');
 Route::get('/briefSelection', 'briefSelectionController@index')->name('briefSelection');
 Route::get('/brief', 'briefController@index')->name('brief');
 Route::get('/createFlowchart', 'briefController@create')->name('flowchart');
+Route::get('/channelPicker', 'channelPickerController@index')->name('channelPicker');
+
 
 /*upload and download excel/scv files*/
 

@@ -15,17 +15,17 @@ class CreateBriefTable extends Migration
     {
         Schema::create('brief', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('client');
-            $table->string('brand');
-            $table->string('product');
-            $table->string('project name');
+            $table->string('client', 200);
+            $table->string('brand', 50);
+            $table->string('product', 50);
+            $table->string('project name', 50);
             $table->integer('project number');
-            $table->string('client name');
-            $table->string('agency manager');
+            $table->string('client name', 50);
+            $table->string('agency manager', 50);
             $table->date('campaign start date');
             $table->date('campaign end date');
             $table->string('target group');
-            $table->integer('agency commission');          
+            $table->integer('agency commission');
             $table->timestamps();
         });
     }

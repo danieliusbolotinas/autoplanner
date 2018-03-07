@@ -1,5 +1,5 @@
 <?php
-namespace App\Http\Controllers\fileController;
+namespace AutoPlanner\Http\Controllers;
 use Illuminate\Http\Request;
 use AutoPlanner\Http\Controllers\Controller;
 use App\Brief;
